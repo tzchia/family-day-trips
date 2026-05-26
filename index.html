@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>家族出遊行程 · Family Day Trips</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang TC", "Microsoft JhengHei", sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #fef9e7 0%, #fde9d9 100%);
+    color: #2c3e50;
+    min-height: 100vh;
+  }
+  .container { max-width: 880px; margin: 0 auto; padding: 40px 20px; }
+  header { text-align: center; margin-bottom: 50px; }
+  h1 {
+    font-size: 2.6em;
+    margin: 0 0 8px;
+    background: linear-gradient(135deg, #e74c3c 0%, #f39c12 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .subtitle { color: #7f8c8d; font-size: 1.1em; }
+  .trips { display: grid; gap: 24px; }
+  .trip-card {
+    background: white;
+    border-radius: 18px;
+    padding: 28px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: block;
+    border-left: 6px solid #e67e22;
+  }
+  .trip-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.12);
+  }
+  .trip-date {
+    color: #e67e22;
+    font-weight: 600;
+    font-size: 0.95em;
+    margin-bottom: 6px;
+  }
+  .trip-title {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin: 4px 0 12px;
+    color: #2c3e50;
+  }
+  .trip-desc { color: #555; line-height: 1.6; margin-bottom: 12px; }
+  .trip-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+  .tag {
+    background: #fef5e7;
+    color: #d35400;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.85em;
+  }
+  footer {
+    text-align: center;
+    margin-top: 60px;
+    color: #95a5a6;
+    font-size: 0.9em;
+  }
+  .coming-soon {
+    opacity: 0.55;
+    border-left-color: #bdc3c7;
+    cursor: default;
+    pointer-events: none;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>🌊 家族出遊行程</h1>
+    <p class="subtitle">Family Day Trips · 跟表姐家的小旅行</p>
+  </header>
+
+  <div class="trips">
+    <a class="trip-card" href="yehliu-jinshan-202605.html">
+      <div class="trip-date">📅 2026/05/30（六）</div>
+      <div class="trip-title">野柳・金山・三芝 北海岸一日遊</div>
+      <div class="trip-desc">
+        兩家人開兩台車（4 大 3 小：1 歲、5 歲、10 歲），從萬里玩到三芝。
+        含野柳地質公園、駱駝峰、海洋世界、朱銘美術館、芝蘭公園夕陽。
+        提供 4 個版本路線可選。
+      </div>
+      <div class="trip-tags">
+        <span class="tag">🚗 開車</span>
+        <span class="tag">👶 親子</span>
+        <span class="tag">🌊 海景</span>
+        <span class="tag">🎨 藝術</span>
+        <span class="tag">🌅 夕陽</span>
+      </div>
+    </a>
+
+    <div class="trip-card coming-soon">
+      <div class="trip-date">📅 未來規劃中</div>
+      <div class="trip-title">⋯ 更多家族行程</div>
+      <div class="trip-desc">陸續累積中</div>
+    </div>
+  </div>
+
+  <footer>
+    Made with ❤️ · <a href="https://github.com/tzchia/family-day-trips" style="color:#95a5a6;">GitHub</a>
+  </footer>
+</div>
+</body>
+</html>
